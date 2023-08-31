@@ -1,0 +1,308 @@
+/* CSS RESET */
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+#navbar::before{
+    content:"";
+    position:absolute;
+    background-color:rgb(16, 182, 179);
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+
+#navbar{
+    display:flex;
+    position:sticky;
+    top:0px;
+}
+
+#logo{
+    margin:40px;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* LIST STYLING */
+#navbar ul{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:350px;
+}
+#navbar ul li{
+    list-style:none;
+}
+#navbar ul li a{
+    text-decoration:none;
+    font-size:1.5rem;
+    font-weight:bolder;
+    color:white;
+    padding:25px 40px;
+}
+#navbar ul li a:hover{
+    color:black;
+    text-decoration-line:underline;
+}
+
+/* HOME SECTION */
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgb(16, 182, 179);
+    width:100%;
+    height:529px;
+    z-index:-1;
+    opacity:0.7;
+}
+#home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:30px;
+    height:371px;
+}
+#home-content{
+    color:white;
+    margin-left:150px;
+}
+.primary{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+.secondary{
+    padding-left:5px;
+    font-size:1.8rem;
+}
+
+/* ABOUT SECTION */
+#about::before{
+    content:"";
+    position:absolute;
+    background-color:black;
+    width:100%;
+    height:950px;
+    z-index:-1;
+} 
+#about{
+    height:950px;
+}
+
+#about-heading{
+    background-color:rgb(16, 182, 179);
+    color:white;
+    padding:20px;
+    margin:60px;
+    border-radius:10px;
+}
+#about-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:rgb(16, 182, 179);
+}
+#schooling{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:50px;
+    border:3px solid white;
+    border-radius:20px;
+    padding:10px 45px;   
+}
+#schooling img{
+    height:200px;
+    width:200px;
+    margin-right:20px;
+}
+#college{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0px 135px;
+    border:3px solid white;
+    border-radius:20px;
+    padding:20px;
+}
+#college img{
+    width:400px;
+    height:350px;
+    margin:10px;
+}
+
+/* SKILLS SECTION */
+#skills::before{
+    content:"";
+    position:absolute;
+    background-color:rgb(16, 182, 179);
+    width:100%;
+    height:528px;
+    z-index:-1;
+}
+#skills{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#skills-heading{
+    font-size:1.8rem;
+    font-weight:bold;
+    background-color:black;
+    border-radius:10px;
+    color:rgb(16, 182, 179);
+    padding:15px;
+    margin-top:60px;
+}
+#skills-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px;
+}
+.box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    border-radius:20px;
+    color:rgb(16, 182, 179);
+    margin:20px;
+    width:320px;
+    height:300px;
+} 
+.box img{
+    width:150px;
+    height:150px;
+    margin:20px;
+}
+
+/* PROJECTS SECTION */
+#projects::before{
+    content:"";
+    position:absolute;
+    background-color:black;
+    width:100%;
+    height:695px;
+    z-index:-1;
+}
+#projects{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:rgb(16, 182, 179);
+}
+#projects-heading{
+    margin:50px;
+    font-size:1.8rem;
+    font-weight:bolder;
+}
+#projects-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.project{
+    color:rgb(16, 182, 179);
+    font-size:1.5rem;
+    margin:10px;
+    text-align:center;
+}
+.project a:hover{
+    cursor:pointer;
+}
+.project img{
+    border:4px solid rgb(16, 182, 179);
+    border-radius:10px;
+    width:350px;
+    height:250px;
+}
+/* BUTTON STYLING */
+#projects a button{
+    background-color:rgb(16, 182, 179);
+    color:white;
+    padding:20px;
+    margin:80px;
+    font-size:2rem;
+    border-radius:20px;
+}
+#projects a button:hover{
+    cursor:pointer
+}
+
+/* CONTACT SECTION */
+#contact::before{
+    content:"";
+    position:absolute;
+    background-color:rgb(16, 182, 179);
+    width:100%;
+    z-index:-2;
+    height:456px;
+}
+#contact{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:452px;
+}
+#contact-heading{
+    color:white;
+    margin:50px;
+    font-size:2rem;
+    font-weight:bolder;
+}
+#contact-content{
+    display:flex;
+    align-items:center;
+}
+#contact-content a img{
+    width:300px;
+    height:200px;
+}
+#contact-content button{
+    padding:10px;
+    background-color:black;
+    border-radius:10px;
+    font-size:1.5rem;
+    color:white;
+    margin:40px;
+}
+#contact-content button:hover{
+    cursor:pointer;
+}
+#number{
+    font-size:2rem;
+    margin:80px;
+}
+
+/* FOOTER */
+#footer::before{
+    content:"";
+    position:absolute;
+    background-color:black;
+    width:100%;
+    height:20px;
+    z-index:-1;
+}
+#footer{
+    display:flex;
+    justify-content: center;
+    height:20px;
+    color:white;
+}
+
+
+
